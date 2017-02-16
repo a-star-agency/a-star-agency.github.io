@@ -233,6 +233,11 @@ img {
 		width: 60em;
 		margin-left: -12em;
 	}
+
+	figure.sample-showcase img {
+		width: calc(100% - 2em);
+		margin-left: 0;
+	}
 }
 
 @media screen and (max-width: 864px) {
@@ -297,6 +302,11 @@ img {
 
 	.partial-screen-content {
 		padding: 4em;
+	}
+
+	figure.sample-showcase img {
+		width: calc(100% - 2em);
+		margin-left: 0;
 	}
 
 	footer {

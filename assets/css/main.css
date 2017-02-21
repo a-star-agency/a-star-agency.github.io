@@ -267,7 +267,7 @@ img {
 		margin: 1em auto;
 	}
 
-	.thumbnails img, section img {
+	.thumbnails img.icon, section img.icon {
 		width: 2em;
 	}
 

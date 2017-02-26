@@ -219,8 +219,13 @@ img {
 }
 
 .button:hover {
-	color: #f60;
-	border: 1px dotted #f60;
+	color: #fff;
+	border: 1px dotted #fff;
+	background-color: #f30;
+}
+
+.button:hover .star {
+	color: #fff;
 }
 
 @media screen and (max-width: 1280px) {

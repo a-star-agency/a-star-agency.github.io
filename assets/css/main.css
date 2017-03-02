@@ -216,6 +216,7 @@ img {
 	text-align: center;
 	transition: 0.3s all;
 	border-radius: 2em;
+	margin: auto 0.5em;
 }
 
 .button:hover {

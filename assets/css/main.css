@@ -19,12 +19,6 @@ body {
 	transition: 0.3s all;
 }
 
-.stars {
-	background-image: url(../../images/stars.png);
-	background-size: 50%;
-	width: 100%;
-}
-
 .full-screen {
 	min-height: 100vh;
 	width: 100%;
@@ -161,16 +155,29 @@ section {
 .thumbnails {
 	width: 70em;
 	margin: 2em auto;
+	vertical-align: text-top;
 }
 
 .thumbnails a {
 	display: inline-block;
+	vertical-align: top;
 	width: 16em;
-	padding: 3em 2em 2em 2em;
+	padding: 2em;
 	margin: 1em;
 	border: 1px dotted #ccc;
 	color: #000;
 	transition: 0.3s all;	
+}
+
+.thumbnails a.screenshot {
+	height: 16em;
+	background-size: cover;
+	background-position: center center;
+	opacity: 0.9;
+}
+
+.thumbnails a.screenshot:hover {
+	opacity: 1;
 }
 
 figure.sample-showcase {
@@ -190,7 +197,7 @@ figure.sample-showcase figcaption {
 }
 
 .icon {
-	width: 1.5em;
+	width: 1.25em;
 }
 
 .thumbnails a:hover {

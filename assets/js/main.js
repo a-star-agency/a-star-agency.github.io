@@ -5,53 +5,21 @@
 */
 
 $(function() {
+	$('article').animate({
+		opacity: 1
+	}, 1000);
 
-	// Vars.
-		var	$window = $(window),
-			$body = $('body'),
-			$wrapper = $('#wrapper');
+	$('.thumbnails').each(function() {
+		var max = 0;
 
-	// Breakpoints.
-		skel.breakpoints({
-			xlarge:	'(max-width: 1680px)',
-			large:	'(max-width: 1280px)',
-			medium:	'(max-width: 980px)',
-			small:	'(max-width: 736px)',
-			xsmall:	'(max-width: 480px)'
+		$(this).find('.card').each(function() {
+			var height = $(this).height();
+
+			if (height > max) {
+				max = height;
+			}
 		});
 
-	// Disable animations/transitions until everything's loaded.
-		$body.addClass('is-loading');
-
-		$window.on('load', function() {
-			$body.removeClass('is-loading');
-
-			$('#wrapper').parallax();
-		});
-
-/*
-	// Poptrox.
-		$window.on('load', function() {
-
-			$('#samples .thumbnails').poptrox({
-				preload: true,
-				onPopupClose: function() { $body.removeClass('is-covered'); },
-				onPopupOpen: function() { $body.addClass('is-covered'); },
-				baseZIndex: 1,
-				useBodyOverflow: false,
-				usePopupEasyClose: true,
-				overlayColor: '#000000',
-				overlayOpacity: 0.75,
-				popupLoaderText: '',
-				fadeSpeed: 300,
-				popupBackgroundColor: '#000000',
-				popupSpeed: 0,
-				usePopupDefaultStyling: false,
-				windowMargin: (skel.breakpoint('small').active ? 5 : 50)
-			});
-		});*/
-
-		$('article').animate({
-			opacity: 1
-		}, 1000);
+		$(this).find('.card').height(max);
+	});
 });

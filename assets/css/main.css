@@ -23,7 +23,12 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: table;
-	background-color: #f9f9f9;
+	background-color: #fcfcfc;
+	border-bottom: 1px solid #eee;
+}
+
+.full-screen article {
+	border: none;
 }
 
 .full-screen h1 {
@@ -42,20 +47,19 @@ body {
 
 .partial-screen {
 	width: 100%;
-}
-
-.gray-background {
-	background-color: #f9f9f9;
+	border-bottom: 1px solid #eee;
 }
 
 .partial-screen-content {
 	padding: 4em;
 }
 
+.gray-background {
+	background-color: #fcfcfc;
+}
+
 .container {
 	margin: auto;
-	padding-top: 6em;
-	padding-bottom: 6em;
 }
 
 header {
@@ -130,7 +134,7 @@ a:hover {
 	padding: 0.5em;
 	color: #000;
 	font-weight: 500;
-	border-bottom: 1px dotted transparent;
+	border-bottom: 1px solid transparent;
 }
 
 .nav a:hover {
@@ -140,12 +144,15 @@ a:hover {
 
 .nav a.selected {
 	border: none;
-	border-bottom: 1px dotted #666;
+	border-bottom: 1px solid #666;
 	color: #000;
 }
 
 article {
 	text-align: center;
+	padding-top: 6em;
+	padding-bottom: 6em;
+	border-bottom: 1px solid #eee;
 }
 
 section {
@@ -171,9 +178,13 @@ section {
 	width: 16em;
 	padding: 2em;
 	margin: 1em;
-	border: 1px dotted #ccc;
+	border: 1px solid #eee;
 	color: #000;
 	transition: 0.3s all;	
+}
+
+.thumbnails a:hover {
+	border: 1px solid #ddd;
 }
 
 .thumbnails a.screenshot {
@@ -193,7 +204,7 @@ figure.sample-showcase {
 
 figure.sample-showcase img {
 	opacity: 1;
-	border: 1px dotted #ccc;
+	border: 1px solid #ccc;
 	padding: 0.5em;
 }
 
@@ -205,10 +216,6 @@ figure.sample-showcase figcaption {
 
 .icon {
 	width: 1em;
-}
-
-.thumbnails a:hover {
-	border: 1px dotted #999;
 }
 
 footer {
@@ -223,7 +230,7 @@ img {
 .button {
 	color: #f30;
 	padding: 0.5em 1em;
-	border: 1px dotted #f30;
+	border: 1px solid #f30;
 	line-height: 4;
 	font-weight: 400;
 	font-size: 1.25em;
@@ -235,7 +242,7 @@ img {
 
 .button:hover {
 	color: #fff;
-	border: 1px dotted #fff;
+	border: 1px solid #fff;
 	background-color: #f30;
 }
 

@@ -42,6 +42,9 @@ body {
 
 .partial-screen {
 	width: 100%;
+}
+
+.gray-background {
 	background-color: #f9f9f9;
 }
 
@@ -51,8 +54,8 @@ body {
 
 .container {
 	margin: auto;
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 6em;
+	padding-bottom: 6em;
 }
 
 header {

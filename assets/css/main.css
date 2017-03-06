@@ -23,8 +23,6 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: table;
-	background-color: #fcfcfc;
-	border-bottom: 1px solid #eee;
 }
 
 .full-screen article {
@@ -47,7 +45,6 @@ body {
 
 .partial-screen {
 	width: 100%;
-	border-bottom: 1px solid #eee;
 }
 
 .partial-screen-content {
@@ -56,6 +53,8 @@ body {
 
 .gray-background {
 	background-color: #fcfcfc;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
 }
 
 .container {
@@ -150,9 +149,8 @@ a:hover {
 
 article {
 	text-align: center;
-	padding-top: 6em;
-	padding-bottom: 6em;
-	border-bottom: 1px solid #eee;
+	padding-top: 4em;
+	padding-bottom: 4em;
 }
 
 section {
@@ -179,12 +177,21 @@ section {
 	padding: 2em;
 	margin: 1em;
 	border: 1px solid #eee;
+	background-color: #fff;
 	color: #000;
 	transition: 0.3s all;	
 }
 
+.gray-background .thumbnails a {
+	border: 1px solid #ddd;
+}
+
 .thumbnails a:hover {
 	border: 1px solid #ddd;
+}
+
+.gray-background .thumbnails a:hover {
+	border: 1px solid #ccc;
 }
 
 .thumbnails a.screenshot {
@@ -204,7 +211,7 @@ figure.sample-showcase {
 
 figure.sample-showcase img {
 	opacity: 1;
-	border: 1px solid #ccc;
+	border: 1px solid #eee;
 	padding: 0.5em;
 }
 

@@ -23,6 +23,9 @@ body {
 	min-height: 100vh;
 	width: 100%;
 	display: table;
+	background-color: #222;
+	background-image: url(../../images/background.png);
+	background-position: center center;
 }
 
 .full-screen article {
@@ -31,10 +34,12 @@ body {
 
 .full-screen h1 {
 	margin-top: -0.75em;
+	color: #fff;
 }
 
 .full-screen p {
 	margin: 0 auto;
+	color: #fff;
 }
 
 .full-screen-content {
@@ -45,6 +50,25 @@ body {
 
 .partial-screen {
 	width: 100%;
+	background-color: #222;
+	background-image: url(../../images/background.png);
+	background-position: center center;
+}
+
+.partial-screen h1 {
+	color: #fff;
+}
+
+.partial-screen .nav a {
+	color: #fff;
+}
+
+.partial-screen .nav a.selected {
+	color: #fff;
+}
+
+.partial-screen .nav a:hover {
+	color: #fff;
 }
 
 .partial-screen-content {

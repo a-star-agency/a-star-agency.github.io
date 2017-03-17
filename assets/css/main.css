@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900i&subset=latin-ext');
+@font-face { font-family: 'Source Sans Pro'; font-weight: 200; src: url('../fonts/SourceSansPro-ExtraLight.otf'); }
+@font-face { font-family: 'Source Sans Pro'; font-weight: 300; src: url('../fonts/SourceSansPro-Light.otf'); }
+@font-face { font-family: 'Source Sans Pro'; font-weight: 400; src: url('../fonts/SourceSansPro-Regular.otf'); }
+@font-face { font-family: 'Source Sans Pro'; font-weight: 600; src: url('../fonts/SourceSansPro-Semibold.otf'); }
+@font-face { font-family: 'Source Sans Pro'; font-weight: 700; src: url('../fonts/SourceSansPro-Bold.otf'); }
+@font-face { font-family: 'Source Sans Pro'; font-weight: 900; src: url('../fonts/SourceSansPro-Black.otf'); }
 
 body {
 	margin: 0;
@@ -10,8 +15,9 @@ body {
 	color: #fff;
 	font-smooth:always;
 	-webkit-font-smoothing: antialiased;
-	background-color: #fff;
 	color: #000;
+	background-color: #fff;
+	background-image: url(../../images/background-white.png);
 }
 
 .star {
@@ -25,7 +31,6 @@ body {
 	display: table;
 	background-color: #222;
 	background-image: url(../../images/background.png);
-	background-position: center center;
 }
 
 .full-screen article {
@@ -40,6 +45,7 @@ body {
 .full-screen p {
 	margin: 0 auto;
 	color: #fff;
+	font-weight: 400;
 }
 
 .full-screen-content {
@@ -79,6 +85,7 @@ body {
 	background-color: #fcfcfc;
 	border-top: 1px solid #eee;
 	border-bottom: 1px solid #eee;
+	background-image: url(../../images/background-white.png);
 }
 
 .container {
@@ -100,21 +107,24 @@ h1 {
 }
 
 h2 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 3em;
 	margin: 0;
+	color: #333;
 }
 
 h3 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 2em;
 	margin: 0;
+	color: #222;
 }
 
 h4 {
-	font-weight: 300;
+	font-weight: 400;
 	font-size: 1.75em;
 	margin: 0;
+	color: #111;
 }
 
 p {
@@ -269,6 +279,7 @@ img {
 	transition: 0.3s all;
 	border-radius: 2em;
 	margin: auto 0.5em;
+	background-color: #fff;
 }
 
 .button:hover {
@@ -369,8 +380,4 @@ img {
 	footer {
 		padding: 4em;
 	}
-}
-
-article.container {
-	opacity: 0;
 }

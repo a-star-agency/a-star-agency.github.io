@@ -5,10 +5,6 @@
 */
 
 $(function() {
-	$('article').animate({
-		opacity: 1
-	}, 1000);
-
 	$('.thumbnails').each(function() {
 		var max = 0;
 

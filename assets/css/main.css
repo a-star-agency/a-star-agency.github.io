@@ -281,7 +281,6 @@ strong, b {
 	transition: 0.3s all;
 	border-radius: 3em;
 	margin: 2em 0.5em;
-	background-color: #fff;
 }
 
 .button:hover {

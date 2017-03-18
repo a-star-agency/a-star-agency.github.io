@@ -6,20 +6,17 @@
 
 $(function() {
 	$('.thumbnails').each(function() {
-		var totalHeight = 0;
-		var countElements = 0;
+		var max = 0;
 
 		console.log('Height');
 		$(this).find('.card').each(function() {
-			if (!$(this).hasClass('screenshot')) {
-				var height = $(this).height();
-				totalHeight += height;
-				++countElements;
+			var height = $(this).height();
+
+			if (height > max && !$(this).hasClass('screenshot')) {
+				max = height;
 			}
 		});
 
-		console.log('compute');
-		console.log(totalHeight / countElements);
-		$(this).find('.card').height(totalHeight / countElements);
+		$(this).find('.card.screenshot').height(max);
 	});
 });

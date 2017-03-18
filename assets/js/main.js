@@ -17,6 +17,6 @@ $(function() {
 			}
 		});
 
-		$(this).find('.card.screenshot').height(max);
+		$(this).find('.card').height(max);
 	});
 });

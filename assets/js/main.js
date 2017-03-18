@@ -17,6 +17,8 @@ $(function() {
 			}
 		});
 
-		$(this).find('.card').height(max);
+		$(this).find('.card').animate({
+			height: max + 'px'
+		});
 	});
 });

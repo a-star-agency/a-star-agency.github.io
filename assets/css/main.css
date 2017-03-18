@@ -242,8 +242,7 @@ figure.sample-showcase {
 figure.sample-showcase img {
 	opacity: 1;
 	border: 0;
-	box-shadow: 0 0 2em 0 rgba(153, 153, 153, 0.2);
-	padding: 0.5em;
+	box-shadow: 0 0 2em 0 rgba(102, 102, 102, 0.2);
 }
 
 figure.sample-showcase figcaption {
@@ -253,7 +252,7 @@ figure.sample-showcase figcaption {
 }
 
 .icon {
-	width: 1.25em;
+	width: 2.25em;
 }
 
 footer {

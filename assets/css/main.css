@@ -225,7 +225,7 @@ section {
 }
 
 .thumbnails a.screenshot {
-	height: 16em;
+	min-height: 16em;
 	background-size: cover;
 	background-position: center center;
 	opacity: 0.9;
@@ -264,6 +264,10 @@ footer {
 
 img {
 	opacity: 0.5;
+}
+
+strong, b {
+	font-weight: 600;
 }
 
 .button {

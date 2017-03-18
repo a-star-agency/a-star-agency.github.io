@@ -225,7 +225,7 @@ section {
 }
 
 .thumbnails a.screenshot {
-	min-height: 16em;
+	height: 12em;
 	background-size: cover;
 	background-position: center center;
 	opacity: 0.9;

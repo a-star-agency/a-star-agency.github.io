@@ -258,8 +258,9 @@ figure.sample-showcase figcaption {
 }
 
 footer {
+	background-color: #111;
+	color: #fff;
 	padding: 4em;
-	opacity: 0.5;
 }
 
 img {

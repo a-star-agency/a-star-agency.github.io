@@ -204,7 +204,6 @@ section {
 	display: inline-block;
 	vertical-align: top;
 	width: 16em;
-	height: 16em;
 	padding: 2em;
 	margin: 1em;
 	border: 0;
@@ -212,6 +211,10 @@ section {
 	color: #000;
 	transition: 0.3s all;
 	box-shadow: 0 0 2em 0 rgba(153, 153, 153, 0.2);
+}
+
+.thumbnails a.square {
+	height: 16em;
 }
 
 .gray-background .thumbnails a {

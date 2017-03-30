@@ -85,7 +85,7 @@ body {
 }
 
 .gray-background {
-	background-color: #fcfcfc;
+	background-color: #fff;
 }
 
 .container {
@@ -210,7 +210,7 @@ section {
 	background-color: #fff;
 	color: #000;
 	transition: 0.3s all;
-	box-shadow: 0 0 2em 0 rgba(153, 153, 153, 0.2);
+	box-shadow: 0 0 1em 0 rgba(153, 153, 153, 0.2);
 }
 
 .thumbnails a.square {
@@ -246,7 +246,7 @@ figure.sample-showcase {
 figure.sample-showcase img {
 	opacity: 1;
 	border: 0;
-	box-shadow: 0 0 2em 0 rgba(102, 102, 102, 0.2);
+	box-shadow: 0 0 1em 0 rgba(102, 102, 102, 0.2);
 }
 
 figure.sample-showcase figcaption {

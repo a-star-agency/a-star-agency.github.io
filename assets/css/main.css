@@ -159,6 +159,16 @@ a:hover {
 	border-bottom: 1px solid #f60;
 }
 
+a.linkedin {
+	color: #069;
+	border-bottom-color: transparent;
+}
+
+a.linkedin:hover {
+	color: #07b;
+	border-bottom-color: #07b;
+}
+
 .nav a {
 	padding: 0.5em;
 	color: #000;
@@ -206,11 +216,10 @@ section {
 	width: 16em;
 	padding: 2em;
 	margin: 1em;
-	border: 0;
 	background-color: #fff;
 	color: #000;
 	transition: 0.3s all;
-	box-shadow: 0 0 1em 0 rgba(153, 153, 153, 0.2);
+	border: 2px solid #f3f3f3;
 }
 
 .thumbnails a.square {
@@ -218,15 +227,15 @@ section {
 }
 
 .gray-background .thumbnails a {
-	border: 0;
+	border-color: #f3f3f3;
 }
 
 .thumbnails a:hover {
-	border: 0;
+	border-color: #eee;
 }
 
 .gray-background .thumbnails a:hover {
-	border: 0;
+	border-color: #eee;
 }
 
 .thumbnails a.screenshot {
@@ -257,6 +266,14 @@ figure.sample-showcase figcaption {
 
 .icon {
 	width: 2em;
+}
+
+.portrait {
+	opacity: 1;
+	margin-top: 4em;
+	margin-bottom: 4em;
+	width: 16em;
+	border-radius: 50%;
 }
 
 footer {

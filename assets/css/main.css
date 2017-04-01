@@ -219,7 +219,7 @@ section {
 	background-color: #fff;
 	color: #000;
 	transition: 0.3s all;
-	border: 2px solid #f3f3f3;
+	box-shadow: 0 0 1em 0 rgba(102, 102, 102, 0.1);
 }
 
 .thumbnails a.square {
@@ -227,15 +227,15 @@ section {
 }
 
 .gray-background .thumbnails a {
-	border-color: #f3f3f3;
+	border: 0;
 }
 
 .thumbnails a:hover {
-	border-color: #eee;
+	border: 0;
 }
 
 .gray-background .thumbnails a:hover {
-	border-color: #eee;
+	border: 0;
 }
 
 .thumbnails a.screenshot {
@@ -255,7 +255,7 @@ figure.sample-showcase {
 figure.sample-showcase img {
 	opacity: 1;
 	border: 0;
-	box-shadow: 0 0 1em 0 rgba(102, 102, 102, 0.2);
+	box-shadow: 0 0 1em 0 rgba(102, 102, 102, 0.1);
 }
 
 figure.sample-showcase figcaption {

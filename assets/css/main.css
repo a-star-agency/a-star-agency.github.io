@@ -228,6 +228,10 @@ section {
 	height: 16em;
 }
 
+.gray-background {
+	background-color: #f9f9f9;
+}
+
 .gray-background .thumbnails a {
 	border: 0;
 }

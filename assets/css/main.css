@@ -22,21 +22,14 @@ body {
 	transition: 0.3s all;
 }
 
-.behind-full-screen-top {
-	width: 100%;
-	display: table;
-	min-height: 100vh;
-	position: absolute;
-	z-index: -1;
+.slick {
 	overflow: hidden;
+	height: 50px;
 }
 
-.behind-full-screen-top .icon {
-	position: absolute;
-	opacity: 0;
-	top: 50vh;
-	left: 50vw;
-	filter: grayscale(1);
+.slick .icon {
+	outline: none;
+	margin: 0.25em;
 }
 
 .full-screen {

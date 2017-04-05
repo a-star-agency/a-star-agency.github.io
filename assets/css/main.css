@@ -22,16 +22,6 @@ body {
 	transition: 0.3s all;
 }
 
-.slick {
-	overflow: hidden;
-	height: 50px;
-}
-
-.slick .icon {
-	outline: none;
-	margin: 0.25em;
-}
-
 .full-screen {
 	width: 100%;
 	display: table;
@@ -151,14 +141,14 @@ p.title {
 a {
 	color: #f30;
 	text-decoration: none;
-	border-bottom: 1px solid transparent;
+	border-bottom: 0.1em solid transparent;
 	transition: 0.3s all;
 	cursor: pointer;
 }
 
 a:hover {
 	color: #f60;
-	border-bottom: 1px solid #f60;
+	border-bottom-color: #f60;
 }
 
 a.linkedin {
@@ -175,17 +165,16 @@ a.linkedin:hover {
 	padding: 0.5em;
 	color: #000;
 	font-weight: 500;
-	border-bottom: 1px solid transparent;
+	border-bottom: 0.1em solid transparent;
 }
 
 .nav a:hover {
 	color: #000;	
-	border-color: #999;
+	border-bottom-color: #999;
 }
 
 .nav a.selected {
-	border: none;
-	border-bottom: 1px solid #666;
+	border-bottom-color: #666;
 	color: #000;
 }
 
@@ -298,7 +287,7 @@ strong, b {
 .button {
 	color: #f30;
 	padding: 0.5em 1em;
-	border: 2px solid #f30;
+	border: 0.15em solid #f30;
 	line-height: 4;
 	font-weight: 600;
 	font-size: 1.25em;

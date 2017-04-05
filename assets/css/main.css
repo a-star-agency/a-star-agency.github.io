@@ -417,3 +417,13 @@ strong, b {
 		padding: 4em;
 	}
 }
+
+@media screen and (min-width: 1600px) and (min-height: 1200px) {
+	body {
+		font-size: 1.2vw;
+	}
+
+	figure.sample-showcase img {
+		width: 36em;
+	}
+}

@@ -210,6 +210,7 @@ section {
 	background-color: #fff;
 	color: #000;
 	transition: 0.3s all;
+	border: 0.15em solid #eee;
 	box-shadow: 0 0 1em 0 rgba(102, 102, 102, 0.1);
 }
 
@@ -219,18 +220,19 @@ section {
 
 .gray-background {
 	background-color: #f9f9f9;
+	border: 0.15em solid #eee;
 }
 
 .gray-background .thumbnails a {
-	border: 0;
+	border-color: #eee;
 }
 
 .thumbnails a:hover {
-	border: 0;
+	border-color: #ddd;
 }
 
 .gray-background .thumbnails a:hover {
-	border: 0;
+	border-color: #ddd;
 }
 
 .thumbnails a.screenshot {

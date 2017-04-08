@@ -351,6 +351,10 @@ strong, b {
 		margin: 1em auto;
 	}
 
+	.thumbnails a.square {
+		height: auto;
+	}
+
 	.thumbnails a.screenshot {
 		height: 16em;
 	}

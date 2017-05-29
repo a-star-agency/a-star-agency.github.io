@@ -22,6 +22,10 @@ body {
 	transition: 0.3s all;
 }
 
+.justify {
+	text-align: justify;
+}
+
 .full-screen {
 	width: 100%;
 	display: table;
@@ -91,27 +95,31 @@ header {
 h1 {
 	font-weight: 600;
 	font-size: 8em;
-	margin: 0;
+	max-width: 6em;
+	margin: 0 auto;
 }
 
 h2 {
 	font-weight: 400;
 	font-size: 3em;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 12em;
 	color: #333;
 }
 
 h3 {
 	font-weight: 400;
 	font-size: 2em;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 18em;
 	color: #222;
 }
 
 h4 {
 	font-weight: 400;
 	font-size: 1.75em;
-	margin: 0;
+	margin: 0 auto;
+	max-width: 20em;
 	color: #111;
 }
 
@@ -307,7 +315,7 @@ strong, b {
 	color: #fff;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 280px) {
 	body {
 		font-size: 19px;
 	}

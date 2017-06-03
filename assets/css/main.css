@@ -1,3 +1,10 @@
+@font-face { font-family: 'Source Serif Pro'; font-weight: 200; src: url('../fonts/SourceSerifPro-ExtraLight.otf'); }
+@font-face { font-family: 'Source Serif Pro'; font-weight: 300; src: url('../fonts/SourceSerifPro-Light.otf'); }
+@font-face { font-family: 'Source Serif Pro'; font-weight: 400; src: url('../fonts/SourceSerifPro-Regular.otf'); }
+@font-face { font-family: 'Source Serif Pro'; font-weight: 600; src: url('../fonts/SourceSerifPro-Semibold.otf'); }
+@font-face { font-family: 'Source Serif Pro'; font-weight: 700; src: url('../fonts/SourceSerifPro-Bold.otf'); }
+@font-face { font-family: 'Source Serif Pro'; font-weight: 900; src: url('../fonts/SourceSerifPro-Black.otf'); }
+
 @font-face { font-family: 'Source Sans Pro'; font-weight: 200; src: url('../fonts/SourceSansPro-ExtraLight.otf'); }
 @font-face { font-family: 'Source Sans Pro'; font-weight: 300; src: url('../fonts/SourceSansPro-Light.otf'); }
 @font-face { font-family: 'Source Sans Pro'; font-weight: 400; src: url('../fonts/SourceSansPro-Regular.otf'); }
@@ -97,6 +104,7 @@ h1 {
 	font-size: 8em;
 	max-width: 6em;
 	margin: 0 auto;
+	font-family: 'Source Serif Pro', serif;
 }
 
 h2 {
@@ -105,6 +113,7 @@ h2 {
 	margin: 0 auto;
 	max-width: 12em;
 	color: #333;
+	font-family: 'Source Serif Pro', serif;
 }
 
 h3 {
@@ -113,6 +122,7 @@ h3 {
 	margin: 0 auto;
 	max-width: 18em;
 	color: #222;
+	font-family: 'Source Serif Pro', serif;
 }
 
 h4 {
@@ -121,6 +131,7 @@ h4 {
 	margin: 0 auto;
 	max-width: 20em;
 	color: #111;
+	font-family: 'Source Serif Pro', serif;
 }
 
 p {

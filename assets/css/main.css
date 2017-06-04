@@ -38,6 +38,7 @@ body {
 	display: table;
 	color: #000;
 	min-height: 100vh;
+	background-color: #111;
 }
 
 .full-screen article {
@@ -66,6 +67,12 @@ body {
 .partial-screen {
 	width: 100%;
 	color: #000;
+	background-color: #fff;
+}
+
+.partial-screen .nav h1 {
+	font-size: inherit;
+	display: inline-block;
 }
 
 .partial-screen .nav a {
@@ -81,10 +88,10 @@ body {
 }
 
 .partial-screen-content {
-	padding-top: 8em;
+	padding-top: 4em;
 	padding-left: 4em;
 	padding-right: 4em;
-	padding-bottom: 8em;
+	padding-bottom: 4em;
 }
 
 .partial-screen-content h1 {

@@ -12,6 +12,13 @@
 @font-face { font-family: 'Source Sans Pro'; font-weight: 700; src: url('../fonts/SourceSansPro-Bold.otf'); }
 @font-face { font-family: 'Source Sans Pro'; font-weight: 900; src: url('../fonts/SourceSansPro-Black.otf'); }
 
+@font-face { font-family: 'Source Code Pro'; font-weight: 200; src: url('../fonts/SourceCodePro-ExtraLight.otf'); }
+@font-face { font-family: 'Source Code Pro'; font-weight: 300; src: url('../fonts/SourceCodePro-Light.otf'); }
+@font-face { font-family: 'Source Code Pro'; font-weight: 400; src: url('../fonts/SourceCodePro-Regular.otf'); }
+@font-face { font-family: 'Source Code Pro'; font-weight: 600; src: url('../fonts/SourceCodePro-Semibold.otf'); }
+@font-face { font-family: 'Source Code Pro'; font-weight: 700; src: url('../fonts/SourceCodePro-Bold.otf'); }
+@font-face { font-family: 'Source Code Pro'; font-weight: 900; src: url('../fonts/SourceCodePro-Black.otf'); }
+
 body {
 	margin: 0;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -104,6 +111,12 @@ body {
 
 header {
 	text-align: center;
+}
+
+code {
+	font-family: 'Source Code Pro', monospace;
+	font-weight: 400;
+	font-size: 80%;
 }
 
 h1 {

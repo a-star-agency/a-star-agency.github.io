@@ -35,9 +35,10 @@ body {
     }
 
     .container .screen .box {
-        width: calc(100vw - 8em);
+        width: calc(100vw - 4em);
         height: auto;
         display: block;
+        padding: 2em;
     }
 
     .container .screen .picture {
@@ -45,7 +46,7 @@ body {
     }
 
     .container .screen .picture.permanent {
-        height: calc(50vh - 8em);
+        height: calc(50vh - 4em);
         display: block;
     }
 }

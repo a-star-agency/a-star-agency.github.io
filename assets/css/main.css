@@ -55,7 +55,7 @@ body {
     margin-right: 1em;
     vertical-align: bottom;
     display: inline-block;
-    height: 3.4em;
+    height: 4em;
 }
 
 .portrait.red img {
@@ -64,8 +64,8 @@ body {
 }
 
 .portrait img {
-    height: 3.4em;
-    width: 3.4em;
+    height: 4em;
+    width: 4em;
     border-radius: 8em;
     background-color: #ccc;
     border: 2px solid #ccc;  

@@ -29,28 +29,6 @@ body {
     background-size: cover;
 }
 
-@media (max-width: 1024px) {
-    body {
-        font-size: 4vw;
-    }
-
-    .container .screen .box {
-        width: calc(100vw - 4em);
-        height: auto;
-        display: block;
-        padding: 2em;
-    }
-
-    .container .screen .picture {
-        display: none;
-    }
-
-    .container .screen .picture.permanent {
-        height: calc(50vh - 4em);
-        display: block;
-    }
-}
-
 .portrait {
     margin-right: 1em;
     vertical-align: bottom;
@@ -136,4 +114,35 @@ p.lead {
 .faded {
     color: #ccc;
     font-size: 75%;
+}
+
+@media (max-width: 1024px) {
+    body {
+        font-size: 4vw;
+    }
+
+    .container .screen .box {
+        width: calc(100vw - 4em);
+        height: auto;
+        display: block;
+        padding: 2em;
+        border-top: 0.1em solid #eee;
+    }
+
+    .container .screen .picture {
+        display: none;
+    }
+
+    .container .screen .picture.permanent {
+        height: calc(50vh - 4em);
+        display: block;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .button.red {
+        display: inline-block;
+    }
 }

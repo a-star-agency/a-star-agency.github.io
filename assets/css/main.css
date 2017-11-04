@@ -11,11 +11,15 @@ body {
     display: table;
 }
 
-.container .screen {
+.screen {
     display: table-row;
 }
 
-.container .screen .box {
+.halfscreen {
+    display: table-row;
+}
+
+.screen .box {
     display: table-cell;
     width: calc(50vw - 8em);
     height: calc(100vh - 8em);
@@ -23,7 +27,31 @@ body {
     padding: 4em;
 }
 
-.container .screen .picture {
+.halfscreen .box {
+    display: table-cell;
+    width: calc(25vw - 8em);
+    height: calc(50vh - 8em);
+    vertical-align: middle;
+    padding: 4em;
+}
+
+.halfscreen .box.cols1 {
+    width: calc(25vw - 8em);
+}
+
+.halfscreen .box.cols2 {
+    width: calc(50vw - 8em);
+}
+
+.halfscreen .box.cols3 {
+    width: calc(75vw - 8em);
+}
+
+.halfscreen .box.cols4 {
+    width: calc(100vw - 8em);
+}
+
+.picture {
     background-color: #000;
     background-position: center center;
     background-size: cover;
@@ -101,6 +129,18 @@ h2 {
     margin-bottom: 0.65em;
 }
 
+h3 {
+    font-weight: inherit;
+    font-size: 150%;
+    margin-bottom: 0.65em;
+}
+
+h4 {
+    font-weight: inherit;
+    font-size: 125%;
+    margin-bottom: 0.65em;
+}
+
 p {
     margin-bottom: 1.5em;
 }
@@ -113,7 +153,6 @@ p.lead {
 
 .faded {
     color: #ccc;
-    font-size: 75%;
 }
 
 @media (max-width: 1024px) {
@@ -121,7 +160,7 @@ p.lead {
         font-size: 4vw;
     }
 
-    .container .screen .box {
+    .container .box {
         width: calc(100vw - 4em);
         height: auto;
         display: block;
@@ -129,11 +168,11 @@ p.lead {
         border-top: 0.1em solid #eee;
     }
 
-    .container .screen .picture {
+    .container .picture {
         display: none;
     }
 
-    .container .screen .picture.permanent {
+    .container .picture.permanent {
         height: calc(50vh - 4em);
         display: block;
     }

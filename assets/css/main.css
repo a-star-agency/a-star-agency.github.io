@@ -30,26 +30,47 @@ body {
 .halfscreen .box {
     display: table-cell;
     width: calc(25vw - 8em);
-    height: calc(50vh - 8em);
     vertical-align: middle;
     padding: 4em;
+}
+
+.halfscreen .box.gray {
+    background-color: #f6f6f6;
+    color: #000;
 }
 
 .halfscreen .box.cols1 {
     width: calc(25vw - 8em);
 }
 
+.halfscreen  .box.cols1.picture {
+    height: calc(25vh - 8em);
+}
+
 .halfscreen .box.cols2 {
     width: calc(50vw - 8em);
+}
+
+.halfscreen .box.cols2.picture {
+    height: calc(66vh - 8em);
 }
 
 .halfscreen .box.cols3 {
     width: calc(75vw - 8em);
 }
 
+.halfscreen .box.cols3.picture {
+    height: calc(75vh - 8em);
+}
+
 .halfscreen .box.cols4 {
     width: calc(100vw - 8em);
 }
+
+.halfscreen .box.cols4.picture {
+    height: calc(100vh - 8em);
+}
+
 
 .picture {
     background-color: #000;
@@ -142,7 +163,7 @@ h4 {
 }
 
 p {
-    margin-bottom: 1.5em;
+    margin-bottom: 0;
 }
 
 p.lead {

@@ -7,70 +7,28 @@ body {
     color: #333;
 }
 
-.container {
+.table {
     display: table;
 }
 
-.screen {
+.full-screen {
+    width: 100vw;
+}
+
+.row {
     display: table-row;
 }
 
-.halfscreen {
-    display: table-row;
-}
-
-.screen .box {
-    display: table-cell;
-    width: calc(50vw - 8em);
-    height: calc(100vh - 8em);
-    vertical-align: middle;
+.cell {
     padding: 4em;
-}
-
-.halfscreen .box {
     display: table-cell;
-    width: calc(25vw - 8em);
     vertical-align: middle;
-    padding: 4em;
-}
-
-.halfscreen .box.gray {
-    background-color: #f6f6f6;
-    color: #000;
-}
-
-.halfscreen .box.cols1 {
-    width: calc(25vw - 8em);
-}
-
-.halfscreen  .box.cols1.picture {
-    height: calc(25vh - 8em);
-}
-
-.halfscreen .box.cols2 {
-    width: calc(50vw - 8em);
-}
-
-.halfscreen .box.cols2.picture {
-    height: calc(66vh - 8em);
-}
-
-.halfscreen .box.cols3 {
-    width: calc(75vw - 8em);
-}
-
-.halfscreen .box.cols3.picture {
-    height: calc(75vh - 8em);
-}
-
-.halfscreen .box.cols4 {
-    width: calc(100vw - 8em);
-}
-
-.halfscreen .box.cols4.picture {
     height: calc(100vh - 8em);
 }
 
+.half-width {
+    width: calc(50vw - 8em);
+}
 
 .picture {
     background-color: #000;
@@ -181,19 +139,25 @@ p.lead {
         font-size: 4vw;
     }
 
-    .container .box {
-        width: calc(100vw - 4em);
-        height: auto;
-        display: block;
+    .row {
         padding: 2em;
-        border-top: 0.1em solid #eee;
     }
 
-    .container .picture {
+    .cell {
+        border-top: 0.1em solid #eee;
+        height: auto;
+        display: block;
+    }
+
+    .half-width {
+        width: calc(100% - 4em);
+    }
+
+    .picture {
         display: none;
     }
 
-    .container .picture.permanent {
+    .picture.permanent {
         height: calc(50vh - 4em);
         display: block;
     }

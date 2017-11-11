@@ -92,6 +92,10 @@ body {
     background-size: contain;
 }
 
+.picture.embed {
+    background-size: calc(100% - 8em);
+}
+
 .canvas {
     padding: 0;
 }

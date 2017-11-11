@@ -15,45 +15,96 @@ body {
     width: 100vw;
 }
 
+.partial-screen {
+    width: 75vw;
+    margin-left: 12.5vw;
+    margin-right: 12.5vw;
+}
+
 .row {
     display: table-row;
 }
 
 .cell {
-    padding: 4em;
     display: table-cell;
     vertical-align: middle;
+}
+
+.cell.textual {
+    padding: 4em;
+}
+
+.cell.picture {
+    line-height: 100%;
+}
+
+.cell.picture img {
+    width: 100%;
+    margin: 0;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.full-screen .cell.textual {
     height: calc(100vh - 8em);
 }
 
-.half-width {
+.full-screen .cell.picture {
+    height: 100vh;
+}
+
+.full-screen .cell.textual.half-width {
     width: calc(50vw - 8em);
+}
+
+.full-screen .cell.picture.half-width {
+    width: calc(50vw);
+}
+
+.partial-screen .cell-textual.half-width {
+    width: calc(37.5vw - 8em);
+    height: calc(37.5vw - 8em);
+}
+
+.partial-screen .cell.picture.half-width {
+    width: 37.5vw;
+    height: 37.5vw;
+}
+
+.partial-screen .cell.textual.full-width {
+    padding: 10em 15em;
+    width: calc(75vw - 30em);
 }
 
 .picture {
     background-color: #000;
     background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.picture.cover {
     background-size: cover;
 }
 
-.portrait {
-    margin-right: 1em;
-    vertical-align: bottom;
-    display: inline-block;
-    height: 4em;
+.picture.contain {
+    background-size: contain;
 }
 
-.portrait.red img {
-    border-color: #f60;
-    background-color: #f60;
+.canvas {
+    padding: 0;
 }
 
-.portrait img {
-    height: 4em;
-    width: 4em;
-    border-radius: 8em;
-    background-color: #ccc;
-    border: 2px solid #ccc;  
+a {
+    transition: all 0.3s;
+    color: #f60;
+    text-decoration: none;
+}
+
+a:hover {
+    border-color: #bbb;
+    color: #f30;
 }
 
 .button {
@@ -65,20 +116,16 @@ body {
     font-size: 75%;
     font-weight: 400;
     letter-spacing: 0.1em;
-    margin-right: 1em;
-    margin-top: 1em;
-    transition: all 0.3s;
+    margin: 1em;
     display: inline-block;
 }
 
-a {
-    text-decoration: none;
+a.button {
     color: inherit;
 }
 
-a:hover {
-    border-color: #999;
-    color: #000;
+a.button:hover {
+    color: inherit;
 }
 
 .button.lead {
@@ -93,6 +140,15 @@ a:hover {
 
 .button.red:hover {
     border-color: #f30;
+    color: #000;
+}
+
+.button.blue {
+    border-color: #09c;
+}
+
+.button.blue:hover {
+    border-color: #08b;
     color: #000;
 }
 
@@ -146,11 +202,56 @@ p.lead {
     .cell {
         border-top: 0.1em solid #eee;
         height: auto;
-        display: block;
+        display: inline-block;
     }
 
-    .half-width {
-        width: calc(100% - 4em);
+    .full-screen .cell.half-width {
+        width: auto;
+        height: auto;
+    }
+
+    .full-screen .cell.full-width {
+        width: auto;
+        height: auto;        
+    }
+
+    .full-screen .cell.textual {
+        height: auto;
+    }
+
+    .full-screen .cell.picture {
+        height: auto;
+    }
+
+    .full-screen .cell.textual.half-width {
+        width: auto;
+    }
+
+    .full-screen .cell.picture.half-width {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .partial-screen {
+        width: 100vw;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .partial-screen .cell-textual.half-width {
+        width: auto;
+        height: auto;
+    }
+
+    .partial-screen .cell.picture.half-width {
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .partial-screen .cell.textual.full-width {
+        padding-left: 4em;
+        padding-right: 4em;
+        width: calc(100vw - 8em);
     }
 
     .picture {

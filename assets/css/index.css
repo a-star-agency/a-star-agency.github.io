@@ -9,6 +9,22 @@ body {
     color: #333;
 }
 
+.floating {
+    position: absolute;
+}
+
+.floating.top {
+    top: 0;
+}
+
+.floating.left {
+    left: 0;
+}
+
+img.logo {
+    width: 128px;
+}
+
 hr {
     border: none;
     height: 12em;

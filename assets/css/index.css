@@ -233,7 +233,7 @@ p.lead {
 
     .full-screen .cell.picture.half-width {
         width: 100vw;
-        height: 100vw;
+        height: 75vw;
     }
 
     .partial-screen {
@@ -270,7 +270,7 @@ p.lead {
         display: none;
     }
 
-    .button.red {
+    .button.permanent {
         display: inline-block;
     }
 }

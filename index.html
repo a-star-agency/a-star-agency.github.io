@@ -13,16 +13,16 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/index.js"></script>
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/LocalBusiness">
         <div class="floating top left">
-            <img class="logo" src="images/logo-white.svg" alt="A* agency" />
+            <img itemprop="logo" class="logo" src="images/logo-white.svg" alt="A* agency" />
         </div>
         <div class="table full-screen" id="index">
             <div class="row">
                 <div class="cell half-width picture permanent cover" style="background-image:url(images/index.jpg)" title="Image by: Nadine Shaabana | Unsplash"></div>
                 <div class="cell half-width textual">
-                    <h1>A* agency</h1>
-                    <p class="lead">By using experience from top tech companies — Amazon, Facebook, Google, Microsoft, Twitter — and knowledge of machine learning, algorithms, and startups, we build software like magic.</p>
+                    <h1 itemprop="name">A* agency</h1>
+                    <p class="lead" itemprop="description">By using experience from top tech companies — Amazon, Facebook, Google, Microsoft, Twitter — and knowledge of machine learning, algorithms, and startups, we build software like magic.</p>
                     <p>
                         <a class="button internal" href="#services">See&nbsp;what&nbsp;we&nbsp;do&nbsp;↓</a>
                     </p>
@@ -33,7 +33,7 @@
             <div class="row">
                 <div class="cell half-width textual">
                     <h2>What we do</h2>
-                    <p class="lead">We implement software — from responsive interfaces to advanced algorithms, to cloud computing, to machine learning.</p>
+                    <p class="lead" itemprop="description">We implement software — from responsive interfaces to advanced algorithms, to cloud computing, to machine learning.</p>
                     <p>But first, we invite our customers to co-create with us. This way, we ask the right questions, find the relevant answers, and build a superior product faster.</p>
                     <p>
                         <a class="button internal" href="#samples">See&nbsp;how&nbsp;it&nbsp;looks&nbsp;↓</a>
@@ -48,7 +48,7 @@
                 <div class="cell half-width picture permanent cover" style="background-image:url(images/samples.jpg); background-color: #f26d6e;" title="Design by: Christina Lauer | Habitlab"></div>
                 <div class="cell half-width textual">
                     <h2>How it looks</h2>
-                    <p class="lead">Projects, platforms, ecosystems — before A*, we implemented each of them as software engineers and startup co-founders.</p>
+                    <p class="lead" itemprop="description">Projects, platforms, ecosystems — before A*, we implemented each of them as software engineers and startup co-founders.</p>
                     <p>If the product needs world-class design, we happen to know an amazing designer with whom we have worked successfully on several occasions.</p>
                     <p>
                         <a class="button red permanent" href="samples.html">See&nbsp;more&nbsp;samples&nbsp;→</a> <a class="button internal" href="#team">See&nbsp;who&nbsp;we&nbsp;are&nbsp;↓</a>
@@ -60,7 +60,7 @@
             <div class="row">
                 <div class="cell half-width textual">
                     <h2>Who we are</h2>
-                    <p class="lead">A small network — a team of friends who withstood time and distance. We build software and work well together.</p>
+                    <p class="lead" itemprop="description">A small network — a team of friends who withstood time and distance. We build software and work well together.</p>
                     <p>We make the world a better place as people and developers. We keep a happy and active life home and smart and hard work at our office.</p>
                     <p>
                         <a class="button red permanent" href="team.html">Meet&nbsp;the&nbsp;team&nbsp;→</a> <a class="button internal" href="#contact">Get&nbsp;in&nbsp;touch&nbsp;↓</a>
@@ -78,7 +78,18 @@
                     <p>
                         <a class="button red permanent" href="mailto:hello@astar.agency">Drop&nbsp;us&nbsp;a&nbsp;line&nbsp;→</a>
                     </p>
-                    <p class="faded">A* agency IVS — H. C. Ørsteds Vej 50 C, 1879 Frederiksberg C — CVR 37071420 — hello@astar.agency — astar.agency</p>
+                    <p class="faded">
+                        <span itemprop="legalName">A* agency IVS</span>
+                        —
+                        <span itemprop="address" itemtype="http://schema.org/PostalAddress">
+                            <span itemprop="streetAddress">H. C. Ørsteds Vej 50 C</span>,
+                            <span itemprop="postalCode">1879</span>
+                            <span itemprop="addressLocality">Frederiksberg C</span>,
+                            <span itemprop="addressCountry">Denmark</span>
+                        </span>
+                        — CVR 37071420 —
+                        <span itemprop="email">hello@astar.agency</span>
+                    </p>
                 </div>
             </div>
         </div>

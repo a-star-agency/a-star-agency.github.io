@@ -13,7 +13,9 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/index.js"></script>
 	</head>
-	<body>
+	<body itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="A* agency">
+        <meta itemprop="url" content="http://astar.agency">
         <div class="table partial-screen" id="team">
             <div class="row">
                 <div class="cell full-width textual text-center">
@@ -23,41 +25,106 @@
                 </div>
             </div>
         </div>
-        <div class="table partial-screen" id="vladmanea">
+        <div class="table partial-screen" id="vladmanea" itemprop="founder" itemscope itemtype="http://schema.org/Person">
             <div class="row">
                 <div class="cell half-width picture cover" style="background-image:url(images/team/vlad-manea.jpg)" title="Vlad Manea"></div>
                 <div class="cell half-width textual">
-                    <h2>Vlad Manea</h2>
-                    <p class="lead">Software consultant</p>
-                    <p>Work at Amazon, Microsoft, and Google. Startup co-founder. Ph.D. candidate in computer science. Bronze medal at the National Olympiad of Informatics. Specialized in software engineering and innovation.</p>
+                    <h2 itemprop="name">Vlad Manea</h2>
+                    <p class="lead" itemprop="jobTitle">Software consultant</p>
                     <p>
-                        <a class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/vladmanea">See&nbsp;Vlad's&nbsp;LinkedIn&nbsp;→</a>
+                        Work at
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Amazon</span>
+                            <meta itemprop="url" content="http://www.amazon.com" />
+                        </span>,
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Microsoft</span>
+                            <meta itemprop="url" content="http://www.microsoft.com" />
+                        </span>, and
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Google</span>
+                            <meta itemprop="url" content="http://www.google.com" />
+                        </span>.
+                        <span itemprop="affiliation" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Habitlab</span>
+                            <meta itemprop="url" content="http://www.habitlab.me" />
+                        </span>
+                        startup co-founder.
+                        <span class="honorificSuffix">M.Sc.</span> in computer science at the
+                        <span itemprop="affiliation" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                            <span itemprop="name">University of Copenhagen</span>
+                            <meta itemprop="url" content="http://www.ku.dk" />
+                        </span>.
+                        <span itemprop="award">Bronze medal at the National Olympiad of Informatics</span>.
+                        Specialized in software engineering and innovation.
+                    </p>
+                    <p>
+                        <a itemprop="url" class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/vladmanea">See&nbsp;Vlad's&nbsp;LinkedIn&nbsp;→</a>
                     </p>
                 </div>
             </div>
         </div>
-        <div class="table partial-screen" id="vladtudose">
+        <div class="table partial-screen" id="vladtudose" itemprop="member" itemscope itemtype="http://schema.org/Person">
             <div class="row">
                 <div class="cell half-width textual">
-                    <h2>Vlad Tudose</h2>
-                    <p class="lead">Software engineer</p>
-                    <p>Work at Twitter, Facebook, and Amazon. M.Sc. in computer science. Gold medal at the National Olympiad of Informatics. Specialized in software engineering, algorithms, and infrastructure.</p>
+                    <h2 itemprop="name">Vlad Tudose</h2>
+                    <p class="lead" itemprop="jobTitle">Software engineer</p>
                     <p>
-                        <a class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/vladtudose">See&nbsp;Vlad's&nbsp;LinkedIn&nbsp;→</a>
+                        Work at
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Amazon</span>
+                            <meta itemprop="url" content="http://www.amazon.com" />
+                        </span>,
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Facebook</span>
+                            <meta itemprop="url" content="http://www.facebook.com" />
+                        </span>, and
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Twitter</span>
+                            <meta itemprop="url" content="http://www.twitter.com" />
+                        </span>.
+                        <span class="honorificSuffix">M.Sc.</span> in computer science at the
+                        <span itemprop="affiliation" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                            <span itemprop="name">University of Iasi</span>
+                            <meta itemprop="url" content="http://www.uaic.ro" />
+                        </span>.
+                        <span itemprop="award">Gold medal at the National Olympiad of Informatics</span>.
+                        Specialized in software engineering, algorithms, and infrastructure.
+                    </p>
+                    <p>
+                        <a itemprop="url" class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/vladtudose">See&nbsp;Vlad's&nbsp;LinkedIn&nbsp;→</a>
                     </p>
                 </div>
                 <div class="cell half-width picture cover" style="background-image:url(images/team/vlad-tudose.jpg)" title="Vlad Tudose"></div>
             </div>
         </div>
-        <div class="table partial-screen" id="adrianairinei">
+        <div class="table partial-screen" id="adrianairinei" itemprop="member" itemscope itemtype="http://schema.org/Person">
             <div class="row">
                 <div class="cell half-width picture cover" style="background-image:url(images/team/adrian-airinei.jpg)" title="Adrian Airinei"></div>
                 <div class="cell half-width textual">
-                    <h2>Adrian Airinei</h2>
-                    <p class="lead">Software engineer</p>
-                    <p>Work at Twitter and Facebook. M.Sc. in computer science. Silver medal at the International Olympiad of Informatics. Specialized in software engineering, algorithms, and optimization.</p>
+                    <h2 itemprop="name">Adrian Airinei</h2>
+                    <p class="lead" itemprop="jobTitle">Software engineer</p>
                     <p>
-                        <a class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/adrian-airinei-66ba9b40/">See&nbsp;Adrian's&nbsp;LinkedIn&nbsp;→</a>
+                        Work at
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Facebook</span>
+                            <meta itemprop="url" content="http://www.facebook.com" />
+                        </span>
+                        and
+                        <span itemprop="alumniOf" itemscope itemtype="http://schema.org/Organization">
+                            <span itemprop="name">Twitter</span>
+                            <meta itemprop="url" content="http://www.twitter.com" />
+                        </span>.
+                        <span class="honorificSuffix">M.Sc.</span> in computer science at the
+                        <span itemprop="affiliation" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                            <span itemprop="name">University of Iasi</span>
+                            <meta itemprop="url" content="http://www.uaic.ro" />
+                        </span>.
+                        <span itemprop="award">Silver medal at the International Olympiad of Informatics</span>.
+                        Specialized in software engineering, algorithms, and optimization.
+                    </p>
+                    <p>
+                        <a itemprop="url" class="button blue permanent" target="_blank" href="https://www.linkedin.com/in/adrian-airinei-66ba9b40/">See&nbsp;Adrian's&nbsp;LinkedIn&nbsp;→</a>
                     </p>
                 </div>
             </div>

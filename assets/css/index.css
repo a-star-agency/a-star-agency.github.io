@@ -234,6 +234,10 @@ p.lead {
         font-size: 4vw;
     }
 
+    img.logo {
+        display: none;
+    }
+
     .row {
         padding: 2em;
     }
@@ -242,6 +246,10 @@ p.lead {
         border-top: 0.1em solid #eee;
         height: auto;
         display: inline-block;
+    }
+
+    .cell.textual {
+        padding: 2em;
     }
 
     .full-screen .cell.half-width {
@@ -288,9 +296,9 @@ p.lead {
     }
 
     .partial-screen .cell.textual.full-width {
-        padding-left: 4em;
-        padding-right: 4em;
-        width: calc(100vw - 8em);
+        padding-left: 2em;
+        padding-right: 2em;
+        width: calc(100vw - 4em);
     }
 
     .picture {

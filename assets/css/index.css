@@ -101,7 +101,7 @@ hr {
 
 .partial-screen .cell.picture.half-width {
     width: 50%;
-    height: 50%;
+    height: 37.5vw;
 }
 
 .partial-screen .cell.textual.full-width {
@@ -271,7 +271,7 @@ p.lead {
 
     .full-screen .cell.full-width {
         width: auto;
-        height: auto;        
+        height: auto;
     }
 
     .full-screen .cell.textual {
